@@ -1,16 +1,10 @@
 :root {
-  --bg: #fafafa;
-  --fg: #111;
-  --muted: #666;
-  --border: #e6e6e6;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0b0b0c;
-    --fg: #e9e9ea;
-    --muted: #9a9aa0;
-    --border: #1e1e22;
-  }
+  /* Solarized Light (aka solarized bright) */
+  --bg: #fdf6e3;      /* base3 */
+  --fg: #586e75;      /* base00 */
+  --muted: #93a1a1;   /* base1 */
+  --border: #eee8d5;  /* base2 */
+  --link: #2aa198;    /* cyan */
 }
 html, body {
   margin: 0;
@@ -52,7 +46,7 @@ ul.links li {
 ul.links a {
   display: inline-block;
   padding: 6px 0;
-  color: inherit;
+  color: var(--link);
   text-decoration: none;
   border-bottom: 1px solid transparent;
 }
