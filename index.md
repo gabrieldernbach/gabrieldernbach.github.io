@@ -1,8 +1,6 @@
----
-layout: home
+layout: page
 title: Home
 permalink: /
----
 
 <h2>Sections</h2>
 <ul>
