@@ -1,5 +1,7 @@
 remote_theme: "jekyll/minima@1e8a445"
 title: Personal blog
+url: https://gabrieldernbach.github.io
+baseurl: ""
 header_pages:
   - fiction.md
   - code.md
