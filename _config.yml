@@ -1,4 +1,4 @@
-remote_theme: "jekyll/minima@1e8a445"
+theme: minima
 title: Personal blog
 url: https://gabrieldernbach.github.io
 baseurl: ""
@@ -6,5 +6,4 @@ header_pages:
   - fiction.md
   - code.md
   - non-fiction.md
-plugins:
-  - jekyll-remote-theme
+plugins: []
