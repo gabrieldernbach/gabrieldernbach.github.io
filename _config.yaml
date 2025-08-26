@@ -4,3 +4,5 @@ header_pages:
   - fiction.md
   - code.md
   - non-fiction.md
+plugins:
+  - jekyll-remote-theme
