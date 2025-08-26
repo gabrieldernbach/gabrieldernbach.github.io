@@ -2,6 +2,8 @@ theme: minima
 title: Personal blog
 url: https://gabrieldernbach.github.io
 baseurl: ""
+exclude:
+  - README.md
 header_pages:
   - fiction.md
   - code.md
