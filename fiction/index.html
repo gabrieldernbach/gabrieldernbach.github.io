@@ -4,10 +4,41 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fiction - Personal blog</title>
+<link rel="stylesheet" href="/styles.css">
 </head>
-<body>
-  <nav><a href="/index.html">Home</a> · <a href="/posts/index.html">All posts</a></nav>
-  <h1>Fiction</h1>
-  <p>Stories, experiments, and speculative worlds.</p>
+<body class="site">
+  <header class="site-header">
+    <div class="container">
+      <div class="brand"><a href="/index.html" style="text-decoration:none;color:inherit;">Personal blog</a></div>
+      <nav class="breadcrumbs"><a href="/index.html">Home</a> · <a href="/posts/index.html">All posts</a> · Fiction</nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Fiction</h1>
+      <p>Stories, experiments, and speculative worlds.</p>
+      <div class="spacer"></div>
+      <ul class="grid">
+        <li>
+          <a class="card" href="#">
+            <h3>Placeholder story</h3>
+            <p class="meta">~5 min read</p>
+            <p>Brief synopsis to help visualize category layout.</p>
+          </a>
+        </li>
+        <li>
+          <a class="card" href="#">
+            <h3>Another placeholder</h3>
+            <p class="meta">~8 min read</p>
+            <p>Testing multi-line descriptions and wrapping behavior.</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Personal blog</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

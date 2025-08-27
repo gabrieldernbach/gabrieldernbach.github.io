@@ -4,12 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Signals of errors - Personal blog</title>
+<link rel="stylesheet" href="/styles.css">
 </head>
-<body>
-  <nav><a href="/index.html">Home</a> · <a href="/non-fiction/index.html">Non-Fiction</a> · <a href="/posts/index.html">All posts</a></nav>
-  <h1>Signals of errors</h1>
-  <p><small>Aug 26, 2025 · Non-Fiction</small></p>
-  <article>
+<body class="site">
+  <header class="site-header">
+    <div class="container">
+      <div class="brand"><a href="/index.html" style="text-decoration:none;color:inherit;">Personal blog</a></div>
+      <nav class="breadcrumbs"><a href="/index.html">Home</a> · <a href="/non-fiction/index.html">Non-Fiction</a> · <a href="/posts/index.html">All posts</a></nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Signals of errors</h1>
+      <p><small>Aug 26, 2025 · <span class="tag">Non-Fiction</span> · ~12 min read</small></p>
+      <div class="spacer"></div>
+      <article>
     <p>The first failure arrived as a phase slip in clocks that had never slipped.</p>
     <p>Across the lattice of neutrino chronometers anchored to intercluster voids, a microphase drift—one part in ten to the thirty-two—rolled eastward through the Eridanus supervoid like a cold front. The collective felt it the way a pianist feels the instrument go slightly out of tune: a sourness not in sound but in symmetry. Someone, somewhere, was losing their hold on time.</p>
     <p>“Noise?” asked the Constructor band.</p>
@@ -68,6 +77,32 @@
     <p>The attempt did not end. It simply was no longer an attempt in a place where attempts had meaning.</p>
     <p>And so the universe—this one—continued to cool, and the lensing around Abell 2744 returned to its old flutter, and in fugitive corners of the night the afterglow’s quadrupole left no trace it had ever been anything but what it had always been.</p>
     <p>But somewhere else, a slope shallow enough to climb waited under a sky that had not yet learned the word “entropy.”</p>
-  </article>
+      </article>
+      <div class="spacer-lg"></div>
+      <section>
+        <h2>Related posts</h2>
+        <ul class="grid">
+          <li>
+            <a class="card" href="#">
+              <h3>Placeholder related post</h3>
+              <p class="meta">Non-Fiction</p>
+              <p>A short summary to visualize related content.</p>
+            </a>
+          </li>
+          <li>
+            <a class="card" href="#">
+              <h3>Another placeholder</h3>
+              <p class="meta">Essay</p>
+              <p>Filler card to complete the section layout.</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Personal blog</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

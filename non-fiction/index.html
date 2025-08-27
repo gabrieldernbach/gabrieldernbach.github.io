@@ -4,10 +4,41 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Non-Fiction - Personal blog</title>
+<link rel="stylesheet" href="/styles.css">
 </head>
-<body>
-  <nav><a href="/index.html">Home</a> · <a href="/posts/index.html">All posts</a></nav>
-  <h1>Non-Fiction</h1>
-  <p>Essays and non-fiction writing.</p>
+<body class="site">
+  <header class="site-header">
+    <div class="container">
+      <div class="brand"><a href="/index.html" style="text-decoration:none;color:inherit;">Personal blog</a></div>
+      <nav class="breadcrumbs"><a href="/index.html">Home</a> · <a href="/posts/index.html">All posts</a> · Non-Fiction</nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Non-Fiction</h1>
+      <p>Essays and non-fiction writing.</p>
+      <div class="spacer"></div>
+      <ul class="grid">
+        <li>
+          <a class="card" href="/posts/signals-of-errors.html">
+            <h3>Signals of errors</h3>
+            <p class="meta">Aug 26, 2025 · ~12 min read</p>
+            <p>On preserving explanation across universes when the cost is memory.</p>
+          </a>
+        </li>
+        <li>
+          <a class="card" href="#">
+            <h3>Placeholder essay</h3>
+            <p class="meta">~7 min read</p>
+            <p>Sample description to visualize additional items in this category.</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Personal blog</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

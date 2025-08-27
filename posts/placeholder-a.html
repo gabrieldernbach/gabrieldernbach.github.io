@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Placeholder post A - Personal blog</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body class="site">
+  <header class="site-header">
+    <div class="container">
+      <div class="brand"><a href="/index.html" style="text-decoration:none;color:inherit;">Personal blog</a></div>
+      <nav class="breadcrumbs"><a href="/index.html">Home</a> · <a href="/code/index.html">Code</a> · <a href="/posts/index.html">All posts</a></nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Placeholder post A</h1>
+      <p><small>Sep 12, 2025 · <span class="tag">Code</span> · ~5 min read</small></p>
+      <div class="spacer"></div>
+      <article>
+        <p>This is a placeholder article to visualize the blog post layout.</p>
+        <p>Use this space for an introductory summary that sets expectations.</p>
+        <h2>Background</h2>
+        <p>Include context, goals, and constraints for the topic.</p>
+        <h2>Approach</h2>
+        <p>Outline the steps, decisions, and tradeoffs you considered.</p>
+        <pre><code>// Example snippet
+const message = 'Hello, world';
+console.log(message);
+</code></pre>
+        <h2>Conclusion</h2>
+        <p>Wrap up with key takeaways and links for further reading.</p>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Personal blog</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}} - Personal blog</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body class="site">
+  <header class="site-header">
+    <div class="container">
+      <div class="brand"><a href="/index.html" style="text-decoration:none;color:inherit;">Personal blog</a></div>
+      <nav class="breadcrumbs"><a href="/index.html">Home</a> · <a href="/{{CATEGORY_PATH}}">{{CATEGORY}}</a> · <a href="/posts/index.html">All posts</a></nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>{{TITLE}}</h1>
+      <p><small>{{DATE}} · <span class="tag">{{CATEGORY}}</span> · {{READ_TIME}}</small></p>
+      <div class="spacer"></div>
+      <article>
+        <p>First paragraph introducing the topic. Replace placeholders with real content.</p>
+        <p>Another paragraph. You can include inline <code>code</code>, images, and lists.</p>
+        <h2>Subheading</h2>
+        <p>Use subheadings to structure longer posts.</p>
+        <ul>
+          <li>Key point one with a brief explanation.</li>
+          <li>Key point two, offering contrast or depth.</li>
+          <li>Key point three, concluding the section.</li>
+        </ul>
+        <pre><code>// Optional code sample
+function example() {
+  console.log('Hello template');
+}
+</code></pre>
+        <p>Concluding thoughts and a call to action.</p>
+      </article>
+      <div class="spacer-lg"></div>
+      <section>
+        <h2>Related posts</h2>
+        <ul class="grid">
+          <li>
+            <a class="card" href="#">
+              <h3>Placeholder related post</h3>
+              <p class="meta">{{CATEGORY}}</p>
+              <p>A short summary to visualize related content.</p>
+            </a>
+          </li>
+          <li>
+            <a class="card" href="#">
+              <h3>Another placeholder</h3>
+              <p class="meta">Essay</p>
+              <p>Filler card to complete the section layout.</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Personal blog</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

@@ -4,10 +4,41 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Code - Personal blog</title>
+<link rel="stylesheet" href="/styles.css">
 </head>
-<body>
-  <nav><a href="/index.html">Home</a> · <a href="/posts/index.html">All posts</a></nav>
-  <h1>Code</h1>
-  <p>Notes, snippets, and essays about programming.</p>
+<body class="site">
+  <header class="site-header">
+    <div class="container">
+      <div class="brand"><a href="/index.html" style="text-decoration:none;color:inherit;">Personal blog</a></div>
+      <nav class="breadcrumbs"><a href="/index.html">Home</a> · <a href="/posts/index.html">All posts</a> · Code</nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Code</h1>
+      <p>Notes, snippets, and essays about programming.</p>
+      <div class="spacer"></div>
+      <ul class="grid">
+        <li>
+          <a class="card" href="#">
+            <h3>Placeholder dev note</h3>
+            <p class="meta">~3 min read</p>
+            <p>Quick snippet or reflection on a programming concept.</p>
+          </a>
+        </li>
+        <li>
+          <a class="card" href="#">
+            <h3>Another placeholder</h3>
+            <p class="meta">~6 min read</p>
+            <p>Filler text to visualize multiple cards and layout behavior.</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Personal blog</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

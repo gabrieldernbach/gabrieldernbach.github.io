@@ -4,15 +4,51 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Personal blog</title>
+<link rel="stylesheet" href="/styles.css">
 </head>
-<body>
-  <h1>Personal blog</h1>
-  <h2>Sections</h2>
-  <ul>
-    <li><a href="/fiction/index.html">Fiction</a></li>
-    <li><a href="/code/index.html">Code</a></li>
-    <li><a href="/non-fiction/index.html">Non-Fiction</a></li>
-    <li><a href="/posts/index.html">All posts</a></li>
-  </ul>
+<body class="site">
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">Personal blog</div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Welcome</h1>
+      <p class="muted">Writing, projects, and notes across categories.</p>
+      <div class="spacer"></div>
+      <h2>Sections</h2>
+      <ul class="grid">
+        <li>
+          <a class="card" href="/fiction/index.html">
+            <h3>Fiction</h3>
+            <p class="meta">Stories, experiments, and speculative worlds.</p>
+          </a>
+        </li>
+        <li>
+          <a class="card" href="/code/index.html">
+            <h3>Code</h3>
+            <p class="meta">Notes, snippets, and essays about programming.</p>
+          </a>
+        </li>
+        <li>
+          <a class="card" href="/non-fiction/index.html">
+            <h3>Non-Fiction</h3>
+            <p class="meta">Essays and non-fiction writing.</p>
+          </a>
+        </li>
+        <li>
+          <a class="card" href="/posts/index.html">
+            <h3>All posts</h3>
+            <p class="meta">Browse everything in reverse chronological order.</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Personal blog</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
